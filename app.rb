@@ -27,7 +27,7 @@ end
 
 post '/' do
   exercise = Exercise.new
-  exercise.num        = params[:number]
+  exercise.num        = params[:number].to_i.in_words
   exercise.save
   redirect '/'  
 end
