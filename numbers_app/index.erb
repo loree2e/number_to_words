@@ -1,0 +1,11 @@
+<h1>Number to Words App</h1>
+<% @exercises.each do |exercise| %>
+  <p>  
+    <span><a href="/<%= exercise.id %>"><%= exercise.name %></a></span>  
+  </p>
+<% end %>
+<h1>Enter your a number and I'll return it to you as a string.</h1>
+<form action ="/" method="post">
+  <p>Number:<input type="number" number="num"></p>
+  <input type="submit">
+</form>
